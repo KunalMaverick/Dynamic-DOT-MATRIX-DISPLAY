@@ -7,7 +7,7 @@ Before I explain the working of the project, I would first like to address a few
 Here use the latest versions of the libraries "MD_Parola.h" and "MD_MAX72xx.h ". For these Libraries u don't have to play with the header files of them to 
 change your hardware type. You can now change it in the code itself.
 
-Initially the dislay might not diplay the exact text which you would have given, this is because the HARDWARE_TYPE(FC16_HW) mentioned in the line 19 of the 
+Initially the dislay might not display the exact text which you would have given, this is because the HARDWARE_TYPE(FC16_HW) mentioned in the line 19 of the 
 code(and by this I am refering to this line:- ```#define HARDWARE_TYPE MD_MAX72XX::FC16_HW```) might not be the Hardware_type of your DotMatrix.
 
 So in case you don't have the Hardware type of your dot matrix display, you have to experiment with these types
@@ -27,7 +27,8 @@ here we are defining the CS_PIN config, so here 15 refers to GPIO 15.
 set ```SSID``` as your WiFi's Name
 and ```Password``` as the Wifi's Password
 
-X-----------------------------------------------------------------------------------------------------------------------------------X
+X---------------------------------------------------------------------------------------------------------------X
+
 **SCHEMATICS**
 
 ![image](https://user-images.githubusercontent.com/40132560/213359157-70746565-ac7b-4265-9505-1936998b09f0.png)
@@ -37,11 +38,11 @@ So here,
 * CS of the LCD is coonected to D8 Pin.
 * CLK of the LCD is connected to D5 Pin.
 
-X------------------------------------------------------------------------------------------------------------------------------------X
+X---------------------------------------------------------------------------------------------------------------X
 
 These were some key points which I feel weren't addressed in major forums, and I hope this repository solves it.
 
-X-------------------------------------------------------------------------------------------------------------------------------------X
+X---------------------------------------------------------------------------------------------------------------X
 
 **WORKING OF THE PROJECT**
 
@@ -57,3 +58,9 @@ In the web-page you have options to send text, control the speed, the direction 
 Here's the photo of the website:-
 
 <img width="324" alt="image" src="https://user-images.githubusercontent.com/40132560/213360283-beb9174c-6a64-4c4f-9410-8b764a6f89aa.png">
+
+**Working sample:-**
+
+https://user-images.githubusercontent.com/40132560/213899621-2275c2e4-0398-44d9-acbf-c850cab88a13.mp4
+
+
